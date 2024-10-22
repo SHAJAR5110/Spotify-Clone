@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="option" id="option">
+                    <div class="lib-option nav-option">
+                        <img src="./images/library_icon.png"  alt="Library Icon">
+                        Your library
+                    </div>
+                    <div class="icons" id="libraryIcons"><i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right" id="LibraryForowrdArrow"></i>
+                    </div>
+                </div>
+                <div class="lib-box" id="lib-box1">
+                    <div class="box-p1">Create your own playlist</div>
+                    <div class="box-p2">It's easy, we'll help you</div>
+                    <button class="bagde" id="bagde1">Create playlist</button>
+                </div>
+                <div class="lib-box" id="lib-box2">
+                    <div class="box-p1">Let's find some podcasts to follow</div>
+                    <div class="box-p2">We'll keep you updated on new episodes</div>
+                    <button class="bagde" id="bagde2">Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./images/backward_icon.png" alt="" class="show" onclick="hide();">
+                <img src="./images/forward_icon.png" alt="" class="hide" onclick="show();">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="bagde hide" id="Exbtn">Explore Premium</button>
+                <button class="bagde2"><i id="bagde2Icon" class="fa-regular fa-circle-down"></i>Install app</button>
+                <i class="fa-regular fa-user" ></i> 
+                </div>
+            </div>
+            
+                <h2 id="h2">Recently Played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./images/card1img.jpeg" alt="">
+                        <p class="card-title">Top 50- Global</p>
+                        <p class="card-info">Your daily updates for the most played tracks</p>
+                    </div>
+                </div>
+
+                <h2 >Trending now near you</h2>
+                <div class="card-container"> 
+                    <div class="card">
+                        <img src="./images/card2img.jpeg" alt="">
+                        <p class="card-title">Mahiye Jinna Sohna</p>
+                        <p class="card-info"><b>Mahiye Jinna Sohna</b> Most Trending music, everyone loves to listen </p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/card3img.jpeg" alt="">
+                        <p class="card-title">Mere pass tum ho</p>
+                        <p class="card-info"><b>Mere pass tum ho</b> Most Trending music, everyone loves to listen</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/card4img.jpeg" alt="">
+                        <p class="card-title">Naa ready</p>
+                        <p class="card-info"><b>Naa ready</b> Most Trending music, everyone loves to listen</p>
+                    </div>
+                <div class="card">
+                    <img src="./images/card3img.jpeg" alt="">
+                    <p class="card-title">Mere pass tum ho</p>
+                    <p class="card-info"><b>Mere pass tum ho</b> Most Trending music, everyone loves to listen</p>
+                </div>
+                <div class="card">
+                    <img src="./images/card2img.jpeg" alt="">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info"><b>Mahiye Jinna Sohna</b> Most Trending music, everyone loves to listen</p>
+                </div>
+            </div>
+                <h2 >Featured Charts</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./images/card5img.jpeg" alt="">
+                        <p class="card-title">Top Songs Global</p>
+                        <p class="card-info">Your weekly updates for the most played tracks</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/card6img.jpeg" alt="">
+                        <p class="card-title">Top Songs India</p>
+                        <p class="card-info">Your weekly updates for the most played tracks</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/card1img.jpeg" alt="">
+                        <p class="card-title">Top 50- Global</p>
+                        <p class="card-info">Your daily updates for the most played tracks</p>
+                    </div>
+                </div>
+                <div class="nav-footer">
+                    <div class="line"></div>
+                </div>
+        </div>
+        <div class="music">
+            <div class="album">
+                <img src="./images/cash out.jpg">
+                <div class="album-title">
+                    <a href="#" class="album-a1">Cash out</a>
+                    <a href="#" class="album-a2">song</a>
+                </div>
+                <div class="album-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-square"></i>
+                </div>
+            </div>
+            
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./images/player_icon1.png" class="music-icons">
+                    <img src="./images/player_icon2.png" class="music-icons">
+                    <img src="./images/player_icon3.png" class="music-icons start-pause">
+                    <img src="./images/player_icon4.png" class="music-icons">
+                    <img src="./images/player_icon5.png" class="music-icons">
+                </div>
+                <div class="playback-bar">
+                    <span class="start-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="end-time">3:33</span>
+                </div>
+                
+            </div>
+            <div class="controls">
+                <div class="control-icons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <i class="fa-solid fa-computer"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" class="progress-bar2">
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="main.js">        
+    </script>
+</body>
+</html>
